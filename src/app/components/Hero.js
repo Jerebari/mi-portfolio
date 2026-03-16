@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <section
-      className="min-h-screen flex items-center justify-center px-6 py-16 bg-[#050509]"
+      className="min-h-screen flex items-center justify-center px-6 py-16"
       aria-labelledby="hero-title"
     >
       <div className="max-w-3xl w-full text-center md:text-left">
@@ -24,17 +24,18 @@ export default function Hero() {
           Jeremías Barisci
         </h1>
         <p className="mt-3 text-lg md:text-xl text-zinc-300">
-          UX/UI Designer &amp; Product Owner
+          Product Owner &amp; UX/UI Designer
         </p>
         <p className="mt-6 text-sm md:text-base text-zinc-400 max-w-xl">
-          Diseño productos digitales que equilibran la experiencia del usuario
-          con los objetivos del negocio.
+          Argentino viviendo en Italia, trabajando remotamente para una empresa
+          tecnológica chilena. Convierto ideas y necesidades de negocio en
+          productos digitales que realmente funcionan.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
           <button
             type="button"
             onClick={handleScrollToProjects}
-            className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-medium text-white bg-[#6366f1] hover:bg-[#4f46e5] transition-colors shadow-lg shadow-indigo-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#6366f1] focus-visible:ring-offset-black"
+            className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-medium text-white bg-[#6366f1] hover:bg-[#4f46e5] transition-colors shadow-lg shadow-indigo-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#6366f1] focus-visible:ring-offset-black cursor-pointer"
           >
             Ver mis proyectos
           </button>

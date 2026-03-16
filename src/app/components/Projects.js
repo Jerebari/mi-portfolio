@@ -1,21 +1,21 @@
 const projects = [
   {
-    title: "Dashboard de producto SaaS",
+    title: "Rebranding Puntospoint",
     description:
-      "Rediseño de la experiencia principal para equipos de negocio, simplificando la toma de decisiones diarias.",
-    category: "B2B",
+      "Lideré el rebranding completo de la empresa, definiendo identidad visual y lineamientos de marca.",
+    category: "Branding & UX",
   },
   {
-    title: "App móvil de finanzas",
+    title: "Rediseño App Starbucks",
     description:
-      "Definición de flujos y UI para ayudar a las personas a entender y organizar sus gastos.",
-    category: "Consumer",
+      "Proyecto académico de rediseño de la app de Starbucks. Nota: 9/10 en Coderhouse.",
+    category: "UX/UI Case Study",
   },
   {
-    title: "Design system para startup",
+    title: "GO — App de Transporte",
     description:
-      "Creación de un sistema de diseño escalable que alineó equipos de producto, diseño y desarrollo.",
-    category: "Design System",
+      "Diseño de app de transporte público para proyecto universitario en NUCBA.",
+    category: "UX/UI Design",
   },
 ];
 
@@ -23,10 +23,11 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="px-6 py-16 md:py-24 bg-[#050509] border-t border-zinc-800"
+      className="px-6 py-16 md:py-24 border-t border-zinc-800"
       aria-labelledby="projects-title"
     >
       <div className="max-w-5xl mx-auto">
+        <div className="rounded-[40px] border-2 border-white bg-[#050509]/95 px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12 shadow-[0_24px_70px_rgba(0,0,0,0.7)]">
         <div className="mb-8 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
           <div>
             <h2
@@ -65,6 +66,7 @@ export default function Projects() {
               </div>
             </article>
           ))}
+        </div>
         </div>
       </div>
     </section>
