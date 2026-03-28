@@ -44,63 +44,59 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="px-6 py-16 md:py-24 border-t border-zinc-800"
+      className="border border-[#1a1a1a] bg-black px-6 py-[50px]"
       aria-labelledby="experience-title"
     >
-      <div className="max-w-5xl mx-auto">
-        <div className="rounded-[40px] border-2 border-white bg-[#050509]/95 px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12 shadow-[0_24px_70px_rgba(0,0,0,0.7)]">
-          <div className="mb-8">
-            <h2
-              id="experience-title"
-              className="text-xl font-semibold tracking-tight text-zinc-100"
-            >
-              Experiencia
-            </h2>
-            <p className="mt-1 text-sm text-zinc-500">
-              Mi recorrido profesional en producto y diseño.
-            </p>
-          </div>
+      <div className="mx-auto max-w-5xl">
+        <p className="mb-2 text-sm font-medium text-[#888]">Experiencia</p>
+        <h2
+          id="experience-title"
+          className="text-2xl font-bold tracking-tight text-white sm:text-3xl"
+        >
+          Recorrido profesional
+        </h2>
 
-          <div className="space-y-8">
-            {experiences.map((exp) => (
-              <div
-                key={`${exp.company}-${exp.role}`}
-                className="relative pl-6 border-l-2 border-zinc-800"
-              >
-                <div className="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full border-2 border-[#6366f1] bg-[#050509]" />
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
-                  <div>
-                    <h3 className="text-sm sm:text-base font-semibold text-zinc-100">
-                      {exp.role}
-                    </h3>
-                    <p className="text-sm text-[#6366f1] font-medium">
-                      {exp.company}
-                    </p>
-                  </div>
-                  <div className="text-xs text-zinc-500 sm:text-right">
-                    <p>{exp.period}</p>
-                    <p>{exp.location}</p>
-                  </div>
-                </div>
-                <p className="text-sm text-zinc-400 leading-relaxed mb-3">
+        <div className="mt-12 space-y-0">
+          {experiences.map((exp, i) => (
+            <div
+              key={`${exp.company}-${exp.role}`}
+              className={`relative grid gap-4 py-8 sm:grid-cols-[180px_1fr] ${
+                i !== experiences.length - 1
+                  ? "border-b border-[#1a1a1a] -mx-6 px-6"
+                  : ""
+              }`}
+            >
+              <div className="text-xs text-[#666]">
+                <p className="font-mono">{exp.period}</p>
+                <p className="mt-1">{exp.location}</p>
+              </div>
+
+              <div>
+                <h3 className="text-base font-semibold text-white">
+                  {exp.role}
+                </h3>
+                <p className="mt-0.5 text-sm font-medium text-[#888]">
+                  {exp.company}
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-[#666]">
                   {exp.description}
                 </p>
                 {exp.highlights.length > 0 && (
-                  <ul className="space-y-1">
+                  <ul className="mt-4 space-y-1.5">
                     {exp.highlights.map((item) => (
                       <li
                         key={item}
-                        className="text-xs text-zinc-500 flex items-start gap-2"
+                        className="flex items-start gap-3 text-sm text-[#666]"
                       >
-                        <span className="mt-1.5 h-1 w-1 rounded-full bg-zinc-600 shrink-0" />
+                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[#333]" />
                         {item}
                       </li>
                     ))}
                   </ul>
                 )}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
