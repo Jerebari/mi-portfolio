@@ -65,6 +65,25 @@ export default function Contact() {
                   />
                 </svg>
               </a>
+
+              <a
+                href="https://www.behance.net/bariscijeremias"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Behance"
+                className="inline-flex items-center justify-center rounded-full border border-zinc-700 bg-zinc-900/80 p-2.5 text-zinc-200 hover:border-[#6366f1] hover:text-white hover:bg-zinc-900 transition-colors cursor-pointer"
+              >
+                <svg
+                  className={ICON_SIZE}
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M7.5 11C9.43 11 11 9.43 11 7.5S9.43 4 7.5 4H2V11H7.5M7.5 6C8.33 6 9 6.67 9 7.5S8.33 9 7.5 9H4V6H7.5M8.5 13H2V20H8.5C10.43 20 12 18.43 12 16.5S10.43 13 8.5 13M8.5 18H4V15H8.5C9.33 15 10 15.67 10 16.5S9.33 18 8.5 18M17.5 13C15.02 13 13 15.02 13 17.5C13 19.98 15.02 22 17.5 22C18.58 22 19.57 21.63 20.35 21L22 22.5L23 21.5L21.35 20C21.63 19.22 22 18.23 22 17.5C22 15.02 19.98 13 17.5 13M17.5 20C16.12 20 15 18.88 15 17.5S16.12 15 17.5 15S20 16.12 20 17.5S18.88 20 17.5 20M16 5H21V7H16V5Z"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>

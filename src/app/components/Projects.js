@@ -2,8 +2,20 @@ const projects = [
   {
     title: "Rebranding Puntospoint",
     description:
-      "Lideré el rebranding completo de la empresa, definiendo identidad visual y lineamientos de marca.",
-    category: "Branding & UX",
+      "Lideré el rebranding completo de la empresa, definiendo identidad visual, lineamientos de marca y supervisando el rediseño del sitio web corporativo.",
+    category: "Branding & Producto",
+  },
+  {
+    title: "Plataformas digitales Puntospoint",
+    description:
+      "Diseño y evolución de plataformas web para usuarios finales y clientes corporativos. Creación de productos desde cero y mejora continua de backoffices.",
+    category: "UX/UI & Producto",
+  },
+  {
+    title: "Definición de producto digital",
+    description:
+      "Participé activamente en la definición inicial del funcionamiento de uno de los principales productos digitales de la empresa, liderando el enfoque de producto y estructura funcional.",
+    category: "Product Owner",
   },
   {
     title: "Rediseño App Starbucks",
@@ -14,7 +26,7 @@ const projects = [
   {
     title: "GO — App de Transporte",
     description:
-      "Diseño de app de transporte público para proyecto universitario en NUCBA.",
+      "Diseño de app de transporte público para proyecto final en NUCBA.",
     category: "UX/UI Design",
   },
 ];
@@ -42,7 +54,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="grid gap-6 md:gap-8 md:grid-cols-3">
+        <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <article
               key={project.title}

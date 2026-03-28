@@ -24,12 +24,13 @@ export default function Hero() {
           Jeremías Barisci
         </h1>
         <p className="mt-3 text-lg md:text-xl text-zinc-300">
-          Product Owner &amp; UX/UI Designer
+          Product Owner | Diseñador UX/UI | Figma lover
         </p>
         <p className="mt-6 text-sm md:text-base text-zinc-400 max-w-xl">
           Argentino viviendo en Italia, trabajando remotamente para una empresa
           tecnológica chilena. Convierto ideas y necesidades de negocio en
-          productos digitales que realmente funcionan.
+          productos digitales que realmente funcionan. Enfocado en construir
+          productos desde cero y mejorar cómo trabajan los equipos.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
           <button

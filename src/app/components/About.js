@@ -37,36 +37,46 @@ export default function About() {
 
           <div className="space-y-6">
             <p className="text-sm md:text-base leading-relaxed text-zinc-300">
-              Comencé mi camino como diseñador UX/UI y con el tiempo asumí un
-              rol activo en producto. Hoy lidero la célula de producto en
-              Puntospoint, siendo responsable del roadmap, backlog y la
-              coordinación entre desarrollo, producto y negocio.
+              Comencé mi camino como diseñador UX/UI, trabajando en la creación
+              y mejora de productos digitales. Con el tiempo fui involucrándome
+              cada vez más en la definición de funcionalidades, priorización de
+              iniciativas y coordinación con equipos técnicos, lo que me llevó
+              de forma natural a un rol más centrado en producto.
             </p>
             <p className="text-sm md:text-base leading-relaxed text-zinc-400">
-              Me interesa especialmente construir productos desde cero y
-              transformar ideas en soluciones reales, conectando necesidades de
-              usuarios con objetivos del negocio de forma clara y ejecutable.
+              Hoy lidero la célula de producto en Puntospoint, siendo
+              responsable de definir prioridades, estructurar el backlog y
+              coordinar el trabajo entre desarrollo, producto y negocio.
+              Coordino un equipo de ~10 desarrolladores y soy el único diseñador
+              del equipo.
+            </p>
+            <p className="text-sm md:text-base leading-relaxed text-zinc-400">
+              A futuro me interesa profundizar en el crecimiento y la
+              organización de equipos de trabajo, ayudando a construir
+              estructuras sólidas que permitan escalar productos y empresas de
+              forma sostenible.
             </p>
 
             <div className="flex flex-wrap gap-2 pt-2">
-              <span className="inline-flex items-center rounded-full border border-zinc-700 bg-zinc-900/60 px-3 py-1 text-xs font-medium text-zinc-200">
-                Product Owner
-              </span>
-              <span className="inline-flex items-center rounded-full border border-zinc-700 bg-zinc-900/60 px-3 py-1 text-xs font-medium text-zinc-200">
-                UX/UI Design
-              </span>
-              <span className="inline-flex items-center rounded-full border border-zinc-700 bg-zinc-900/60 px-3 py-1 text-xs font-medium text-zinc-200">
-                Figma
-              </span>
-              <span className="inline-flex items-center rounded-full border border-zinc-700 bg-zinc-900/60 px-3 py-1 text-xs font-medium text-zinc-200">
-                Design System
-              </span>
-              <span className="inline-flex items-center rounded-full border border-zinc-700 bg-zinc-900/60 px-3 py-1 text-xs font-medium text-zinc-200">
-                Jira
-              </span>
-              <span className="inline-flex items-center rounded-full border border-zinc-700 bg-zinc-900/60 px-3 py-1 text-xs font-medium text-zinc-200">
-                Gestión de equipos
-              </span>
+              {[
+                "Product Owner",
+                "UX/UI Design",
+                "Figma",
+                "Design System",
+                "Jira",
+                "Clarity",
+                "Gestión de equipos",
+                "Desarrollo de productos",
+                "Roadmap & Backlog",
+                "Customer Experience",
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="inline-flex items-center rounded-full border border-zinc-700 bg-zinc-900/60 px-3 py-1 text-xs font-medium text-zinc-200"
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
           </div>
           </div>
